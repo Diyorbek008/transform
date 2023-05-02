@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-walpeper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/grey.jpg);
+    background-size: 100% 120vh;
+    padding-top: 40px;
+}
+.rom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 490px;
+    border: 20px ridge black;
+    background-image: url(./img/beach.jpg);
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+.deraza {
+    width: 100%;
+    border: 20px ridge grey;
+    background-color: rgba(0, 0, 0 ,0.5);
+    transition: all 2s ease;
+}
+.right{
+    transform-origin: right center;
+}
+
+.left{
+    transform-origin: left center;
+}
+.rom:hover .right{
+    transform: perspective(1500px) rotateY(130deg) ;
+}
+.rom:hover .left{
+    transform: perspective(1500px) rotateY(-130deg) ;
+}
