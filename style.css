@@ -39,6 +39,39 @@
 .rom:hover .right{
     transform: perspective(1500px) rotateY(130deg) ;
 }
-.rom:hover .left{
+.rom:hover .left{   
     transform: perspective(1500px) rotateY(-130deg) ;
 }
+
+@media only screen and (max-width:800px) {
+    .rom{
+        width: 400px;
+    } 
+}
+
+@media only screen and (max-width:800px) {
+    .rom{
+        width: 310px;
+        height: 380px;
+    } 
+    .left{
+        height: 345px;
+    }
+    .right{
+        height: 345px;
+    }
+}
+@media only screen and (max-width:540px) {
+    .rom{
+        width: 210px;
+        height: 300px;
+        margin-top: 60px;
+    } 
+    .left{
+        height: 265px;
+    }
+    .right{
+        height: 265px;
+    }
+}
+ 
